@@ -41,14 +41,14 @@ h2 {
 
 @media screen and (min-width: 540px) and (min-device-width: 540px) {
    .electoral-system-view {
-   	  width: 50%;
+       width: 50%;
    }
 }
 
 @media screen and (min-width: 1080px) and (min-device-width: 1080px) {
-	.electoral-system-view {
-	   width: 25%;
-	}
+   .electoral-system-view {
+       width: 25%;
+   }
 }
 
 .pulse-loader:not(:required) {
