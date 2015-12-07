@@ -11,14 +11,14 @@
 // Enables strict mode
 "use strict";
 
+// Establishes a namespace
+var electionViz = electionViz || {};
+
 // Creates an electoral system view object within the electionViz namespace
 electionViz.electoralSystemView = function (aName, anID, aModel) {
    var name = aName;
    var model = aModel;
    var canvas = $(anID)[0];
-   var interactiveCandidatePosition = null;
-   var lastPoint = null;
-   var isDragging = false;
    var electionColours = [
       "#B91D47", // Red
       "#009688", // Green
@@ -106,5 +106,5 @@ electionViz.electoralSystemView = function (aName, anID, aModel) {
    // Returns public functions
    return {
       update: update
-   }
+   };
 };

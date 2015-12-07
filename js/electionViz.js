@@ -10,6 +10,9 @@
 // Enables strict mode
 "use strict";
 
+// Establishes a namespace
+var electionViz = electionViz || {};
+
 $(function() {
    // Creates a model and initializes it
    var model = new electionViz.model();

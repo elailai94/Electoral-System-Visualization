@@ -11,6 +11,9 @@
 // Enables strict mode
 "use strict";
 
+// Establishes a namespace
+var electionViz = electionViz || {};
+
 electionViz.formView = function (anID, aModel) {
    var model = aModel;
    var candidatesXCoordinatesTextfields = $("[id$='_x_coordinate_textfield']");
@@ -66,7 +69,7 @@ electionViz.formView = function (anID, aModel) {
          } // if
       });
 
-      remove_candidate_button.addEventListener("click", function (e) {
+      removeCandidateButton.addEventListener("click", function (e) {
          if (model.getNumCandidates() > model.MIN_NUM_CANDIDATES) {
             model.removeCandidatePosition();
             $("div[id$='_fields']").slice(model.getNumCandidates()).hide();
@@ -129,7 +132,7 @@ electionViz.formView = function (anID, aModel) {
 
    // Generates a random float between min and max
    function generateRandomFloat(min, max) {
-      return (Math.random() * (max - min) + min).toFixed(2)
+      return (Math.random() * (max - min) + min).toFixed(2);
    } // generateRandomFloat
 
    // Checks the validity of the candidates fields
@@ -160,5 +163,5 @@ electionViz.formView = function (anID, aModel) {
    // Returns public functions
    return {
       update: update
-   }
+   };
 };
