@@ -1,2 +1,2 @@
-# electoral-system-visualization
+# Electoral System Visualization
 Electoral System Visualization
