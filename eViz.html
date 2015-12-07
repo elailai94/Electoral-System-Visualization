@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Electoral System Visualization</title>
+
+   <!-- Third-Party Libraries -->
+   <script src="lib/jquery-2.1.4.js"></script>
+   <script src="lib/underscore-1.8.3.min.js"></script>
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="css/electionViz.css"/>
+
+   <!-- JavaScript-->
+   <script src="js/electionViz.js"></script>
+   <script src="js/model.js"></script>
+   <script src="js/electoralSystemView.js"></script>
+   <script src="js/formView.js"></script>
+</head>
+   
+<body>
+   <h1>Electoral System Visualization</h1>
+   <div id="electoral_system_views">
+      <div class="column electoral-system-view">
+         <h2>FPTP</h2>
+         <canvas id="fptp_electoral_system_view"></canvas>
+      </div>
+   
+      <div class="column electoral-system-view">
+         <h2>Condorcet</h2>
+         <canvas id="condorcet_electoral_system_view"></canvas>
+      </div>
+   
+      <div class="column electoral-system-view">
+         <h2>Borda</h2>
+         <canvas id="borda_electoral_system_view"></canvas>
+      </div>
+   
+      <div class="column electoral-system-view">
+         <h2>IRV</h2>
+         <canvas id="irv_electoral_system_view"></canvas>
+      </div>
+
+      <div class="clear-float"></div>
+   </div>
+
+   <form id="form_view">
+      <div class="column">
+         <div class="field" id="candidates_field">
+            <label>Candidates</label>
+            <div id="candidate_1_fields">
+               <div class="column red">
+                  <p></p>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_1_x_coordinate_textfield" type="number" placeholder="X-Coordinate"/>
+                  <div id="candidate_1_x_coordinate_error_message"></div>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_1_y_coordinate_textfield" type="number" placeholder="Y-Coordinate"/>
+                  <div id="candidate_1_y_coordinate_error_message"></div>
+               </div>
+               <div class="clear-float"></div>
+            </div>
+
+            <div id="candidate_2_fields">
+               <div class="column green">
+                  <p></p>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_2_x_coordinate_textfield" type="number" placeholder="X-Coordinate"/>
+                  <div id="candidate_2_x_coordinate_error_message"></div>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_2_y_coordinate_textfield" type="number" placeholder="Y-Coordinate"/>
+                  <div id="candidate_2_y_coordinate_error_message"></div>
+               </div>
+               <div class="clear-float"></div>
+            </div>
+
+            <div id="candidate_3_fields">
+               <div class="column blue">
+                  <p></p>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_3_x_coordinate_textfield" type="number" placeholder="X-Coordinate"/>
+                  <div id="candidate_3_x_coordinate_error_message"></div>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_3_y_coordinate_textfield" type="number" placeholder="Y-Coordinate"/>
+                  <div id="candidate_3_y_coordinate_error_message"></div>
+               </div>
+               <div class="clear-float"></div>
+            </div>
+
+            <div id="candidate_4_fields">
+               <div class="column yellow">
+                  <p></p>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_4_x_coordinate_textfield" type="number" placeholder="X-Coordinate"/>
+                  <div id="candidate_4_x_coordinate_error_message"></div>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_4_y_coordinate_textfield" type="number" placeholder="Y-Coordinate"/>
+                  <div id="candidate_4_y_coordinate_error_message"></div>
+               </div>
+               <div class="clear-float"></div>
+            </div>
+
+            <div id="candidate_5_fields">
+               <div class="column purple">
+                  <p></p>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_5_x_coordinate_textfield" type="number" placeholder="X-Coordinate"/>
+                  <div id="candidate_5_x_coordinate_error_message"></div>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_5_y_coordinate_textfield" type="number" placeholder="Y-Coordinate"/>
+                  <div id="candidate_5_y_coordinate_error_message"></div>
+               </div>
+               <div class="clear-float"></div>
+            </div>
+
+            <div id="candidate_6_fields">
+               <div class="column orange">
+                  <p></p>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_6_x_coordinate_textfield" type="number" placeholder="X-Coordinate"/>
+                  <div id="candidate_6_x_coordinate_error_message"></div>
+               </div>
+               <div class="column">
+                  <input class="valid" id="candidate_6_y_coordinate_textfield" type="number" placeholder="Y-Coordinate"/>
+                  <div id="candidate_6_y_coordinate_error_message"></div>
+               </div>
+               <div class="clear-float"></div>
+            </div>
+
+            <button id="add_candidate_button">Add Candidate</button>
+            <button id="remove_candidate_button">Remove Candidate</button>
+         </div>
+         
+         <div class="field">
+            <label>Number of Voters</label>
+            <input class="valid" id="num_voters_textfield" type="number"/>
+        </div>
+        <div id="num_voters_error_message"></div>
+        <div class="field">
+           <label>Standard Deviation</label>
+           <input class="valid" id="standard_deviation_textfield" type="number"/>
+        </div>
+        <div id="standard_deviation_error_message"></div>
+        <div class="field">
+           <label>Resolution</label>
+           <select class="valid" id="resolution_dropdown">
+              <option value="1">1×1</option>
+              <option value="2">2×2</option>
+              <option value="4">4×4</option>
+              <option value="8">8×8</option>
+              <option value="16">16×16</option>
+           </select>
+        </div>
+        <button id="simulate_button" type="button">Simulate</button>
+      </div>
+
+      <div class="clear-float"></div> 
+   </form>
+</body>
+</html>
