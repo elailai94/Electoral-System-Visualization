@@ -42,12 +42,13 @@ electionViz.electoralSystemView = function (aName, anID, aModel) {
 
    // Updates the view using information from the model
    function update() {
-   	  if (model.getIsSimulating()) {
+   	if (model.getIsSimulating()) {
          $(anID).hide();
-         $(".pulse-loader").remove();
-         var loadingIndicator = document.createElement("div");
-         loadingIndicator.className = "pulse-loader";
-         $(anID).after(loadingIndicator);
+         if ($(anID).next().length === 0) {
+            var loadingIndicator = document.createElement("div");
+            loadingIndicator.className = "pulse-loader";
+            $(anID).after(loadingIndicator);
+         } // if
       } else {
       	 $(anID).show();
       	 $(".pulse-loader").remove();         
