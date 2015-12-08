@@ -44,6 +44,7 @@ electionViz.electoralSystemView = function (aName, anID, aModel) {
    function update() {
    	  if (model.getIsSimulating()) {
          $(anID).hide();
+         $(".pulse-loader").remove();
          var loadingIndicator = document.createElement("div");
          loadingIndicator.className = "pulse-loader";
          $(anID).after(loadingIndicator);
