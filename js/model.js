@@ -160,14 +160,12 @@ electionViz.model = function () {
    	  };
       candidatePositions.push(newCandidatePosition);
       numCandidates += 1;
-      notifyObservers();
    } // addCandidatePosition
 
    // Removes the last candidate position from the list of candidate positions
    function removeCandidatePosition() {
    	  candidatePositions.pop();
    	  numCandidates -= 1;
-   	  notifyObservers();
    } // removeCandidatePosition
 
    // Adds a view observer to the model
