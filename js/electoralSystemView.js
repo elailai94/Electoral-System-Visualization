@@ -51,7 +51,7 @@ electionViz.electoralSystemView = function (aName, anID, aModel) {
          } // if
       } else {
       	 $(anID).show();
-      	 $(".pulse-loader").remove();         
+      	 $(anID).next().remove();         
       	 displayElectionsResults();
          displayCandidatePositions();
       } // if
