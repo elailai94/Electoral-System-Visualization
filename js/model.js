@@ -207,9 +207,9 @@ electionViz.model = function () {
    	setSizePerElection: setSizePerElection,
    	setNumVotersPerElection: setNumVotersPerElection,
    	setStandardDeviation: setStandardDeviation,
-	   simulateElections: simulateElections,
-	   addCandidatePosition: addCandidatePosition,
-	   removeCandidatePosition: removeCandidatePosition,
-	   addObserver: addObserver
+	simulateElections: simulateElections,
+	addCandidatePosition: addCandidatePosition,
+	removeCandidatePosition: removeCandidatePosition,
+	addObserver: addObserver
    };
 };
