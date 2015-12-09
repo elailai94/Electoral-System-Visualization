@@ -2,8 +2,7 @@
 // Electoral System Visualization
 //
 // @description: Module for providing functions to work with electionViz objects
-// @author: Ah Hoe Lai
-// @userid: ahlai
+// @author: Elisha Lai
 // @version: 1.0 28/11/2015
 //==============================================================================
 
