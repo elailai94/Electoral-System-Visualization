@@ -3,8 +3,7 @@
 //
 // @description: Module for providing functions to work with electoralSystemView
 // objects
-// @author: Ah Hoe Lai
-// @userid: ahlai
+// @author: Elisha Lai
 // @version: 1.0 28/11/2015
 //==============================================================================
 
