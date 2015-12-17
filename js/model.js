@@ -2,8 +2,7 @@
 // Electoral System Visualization
 //
 // @description: Module for providing functions to work with model objects
-// @author: Ah Hoe Lai
-// @userid: ahlai
+// @author: Elisha Lai
 // @version: 1.0 28/11/2015
 //==============================================================================
 
@@ -160,14 +159,12 @@ electionViz.model = function () {
    	  };
       candidatePositions.push(newCandidatePosition);
       numCandidates += 1;
-      notifyObservers();
    } // addCandidatePosition
 
    // Removes the last candidate position from the list of candidate positions
    function removeCandidatePosition() {
    	  candidatePositions.pop();
    	  numCandidates -= 1;
-   	  notifyObservers();
    } // removeCandidatePosition
 
    // Adds a view observer to the model
@@ -209,9 +206,9 @@ electionViz.model = function () {
    	setSizePerElection: setSizePerElection,
    	setNumVotersPerElection: setNumVotersPerElection,
    	setStandardDeviation: setStandardDeviation,
-	   simulateElections: simulateElections,
-	   addCandidatePosition: addCandidatePosition,
-	   removeCandidatePosition: removeCandidatePosition,
-	   addObserver: addObserver
+	simulateElections: simulateElections,
+	addCandidatePosition: addCandidatePosition,
+	removeCandidatePosition: removeCandidatePosition,
+	addObserver: addObserver
    };
 };

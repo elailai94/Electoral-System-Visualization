@@ -3,8 +3,7 @@
 //
 // @description: Module for providing functions to work with electoralSystemView
 // objects
-// @author: Ah Hoe Lai
-// @userid: ahlai
+// @author: Elisha Lai
 // @version: 1.0 28/11/2015
 //==============================================================================
 
@@ -42,14 +41,16 @@ electionViz.electoralSystemView = function (aName, anID, aModel) {
 
    // Updates the view using information from the model
    function update() {
-   	  if (model.getIsSimulating()) {
+   	if (model.getIsSimulating()) {
          $(anID).hide();
-         var loadingIndicator = document.createElement("div");
-         loadingIndicator.className = "pulse-loader";
-         $(anID).after(loadingIndicator);
+         if ($(anID).next().length === 0) {
+            var loadingIndicator = document.createElement("div");
+            loadingIndicator.className = "pulse-loader";
+            $(anID).after(loadingIndicator);
+         } // if
       } else {
       	 $(anID).show();
-      	 $(".pulse-loader").remove();         
+      	 $(anID).next().remove();         
       	 displayElectionsResults();
          displayCandidatePositions();
       } // if
