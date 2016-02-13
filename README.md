@@ -1,13 +1,6 @@
 # Electoral System Visualization
+### About
 Electoral System Visualization
-
-### Screenshots
-![Electoral_System_Visualization_Screenshot](https://cloud.githubusercontent.com/assets/7763904/11633429/21973a00-9cd9-11e5-8fff-fcb47cc08aa1.png)
-
-### Web Service Initialization
-```Bash
-./start
-```
 
 ### How Does It Work?
 This project was inspired by [a webpage](http://www.zesty.ca/voting/sim) by Ka-Ping Yee.
@@ -25,6 +18,14 @@ Now hold an election. Each of the voters casts a ballot with each candidate rank
 Repeat the above for each point on the plane: move the "centre of opinion" to that point, scatter a large number of voters around that point, hold an election, and colour that point with the colour of the winner. Thus, each point on the plane represents an election with that point being the centre of public opinion. The result are images like those at the top of the page.
 
 Obviously this is a simplification of real elections. But they do give us insights into the behaviour of each system. Real world behaviour would be more complex than these simulations show.
+
+### Screenshots
+![Electoral_System_Visualization_Screenshot](https://cloud.githubusercontent.com/assets/7763904/11633429/21973a00-9cd9-11e5-8fff-fcb47cc08aa1.png)
+
+### Web Service Initialization
+```Bash
+./start
+```
 
 ### License
 * Electoral System Visualization is licensed under the [MIT license](https://www.github.com/elailai94/Electoral-System-Visualization/blob/master/LICENSE.md).
