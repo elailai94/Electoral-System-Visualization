@@ -1,10 +1,8 @@
 # Electoral System Visualization
 ### About
-Electoral System Visualization
+Electoral System Visualization is a visual simulation of four different electoral system consisting of first-past-the-post (FPTP), Borda, Condorcet, and IRV. This project is written entirely in HTML5, CSS, and JavaScript. This project was inspired by a [webpage](http://www.zesty.ca/voting/sim) authored by Ka-Ping Yee.
 
 ### How Does It Work?
-This project was inspired by [a webpage](http://www.zesty.ca/voting/sim) by Ka-Ping Yee.
-
 The simulation assumes that each candidate and voter can be plotted on a 2D plane. Imagine two axes of "Fiscal Policy" and "Social Policy". The diagram on the right shows such a plane with four election candidates plotted on it (the circles).
 
 A voter can also be plotted on it (the square). This voter's first choice candidate is presumed to be the closest one. So in a FPTP election, this voter would vote for the green candidate.
