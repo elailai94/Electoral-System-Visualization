@@ -16,7 +16,7 @@ Now add more voters, all clustered around a "centre of opinion" (the cross). Mos
 
 Now hold an election. Each of the voters casts a ballot with each candidate ranked by order of their distance from the voter. Count up the ballots to see who wins. Then colour the centre of opinion with the same colour as the winner.
 
-Repeat the above for each point on the plane: move the "centre of opinion" to that point, scatter a large number of voters around that point, hold an election, and colour that point with the colour of the winner. Thus, each point on the plane represents an election with that point being the centre of public opinion. The result are images like those at the top of the page.
+Repeat the above for each point on the plane: move the "centre of opinion" to that point, scatter a large number of voters around that point, hold an election, and colour that point with the colour of the winner. Thus, each point on the plane represents an election with that point being the centre of public opinion. The result are images like those below.
 
 Obviously, this is a simplification of real elections. However, they do give us insights into the behaviour of each system. Real world behaviour would be more complex than these simulations show.
 
