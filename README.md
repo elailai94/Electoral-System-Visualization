@@ -5,6 +5,7 @@ Electoral System Visualization is a visual simulation of four different electora
 ### How Does It Work?
 ![policy_plane_example1](https://cloud.githubusercontent.com/assets/7763904/13036984/cf1c6754-d343-11e5-9756-5818fa764ff0.png)
 ![policy_plane_example2](https://cloud.githubusercontent.com/assets/7763904/13036985/d0c847e4-d343-11e5-9b4f-a0fc11c3fccc.png)
+
 The simulation assumes that each candidate and voter can be plotted on a 2D plane. Imagine two axes of "Fiscal Policy" and "Social Policy". The diagram on the top shows such a plane with four election candidates plotted on it (the circles).
 
 A voter can also be plotted on it (the square). This voter's first choice candidate is presumed to be the closest one. So in a FPTP election, this voter would vote for the green candidate.
