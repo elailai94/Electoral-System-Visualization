@@ -26,7 +26,7 @@ Obviously, this is a simplification of real elections. However, they do give us 
 ```
 
 ### Web Application Access
-Open up eViz.html in a web browser.
+You can open up eViz.html in a web browser.
 
 ### License
 * Electoral System Visualization is licensed under the [MIT license](https://www.github.com/elailai94/Electoral-System-Visualization/blob/master/LICENSE.md).
