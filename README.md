@@ -20,7 +20,7 @@ Repeat the above for each point on the plane: move the "centre of opinion" to th
 
 Obviously, this is a simplification of real elections. However, they do give us insights into the behaviour of each system. Real world behaviour would be more complex than these simulations show.
 
-### Screenshots
+### Screenshot
 ![Electoral_System_Visualization_Screenshot](https://cloud.githubusercontent.com/assets/7763904/13065843/72c0123a-d42e-11e5-87c8-2fd9d7bd24f4.png)
 
 ### Web Service Initialization
