@@ -26,7 +26,7 @@ Obviously, this is a simplification of real elections. However, they do give us 
 ### Web Service Initialization
 ```Bash
 cd webservice/bin
-./start
+./eViz
 ```
 
 ### Web Application Access
