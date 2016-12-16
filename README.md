@@ -5,7 +5,7 @@
 [![JavaScript Badge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
 
 ### About
-Electoral System Visualization is a visual simulation of four different electoral system consisting of first-past-the-post (FPTP), Borda, Condorcet, and IRV. This project was inspired by a [webpage](http://www.zesty.ca/voting/sim) authored by Ka-Ping Yee and is written entirely in HTML5, CSS, and JavaScript.
+Electoral System Visualization is a visual simulation of four different electoral system consisting of first-past-the-post (FPTP), Borda, Condorcet, and IRV. This project was inspired by a [webpage](http://www.zesty.ca/voting/sim) authored by Ka-Ping Yee and is written entirely in HTML, CSS, and JavaScript.
 
 ### How Does It Work?
 ![policy_plane_example1](https://cloud.githubusercontent.com/assets/7763904/13036984/cf1c6754-d343-11e5-9756-5818fa764ff0.png)
